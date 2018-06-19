@@ -1,0 +1,50 @@
+[ 2018-06-18T00:12:59+08:00 ] ::1 /wwwroot/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\wwwroot\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: key D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 10 行.
+NOTIC: [8] Undefined index: msg D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant msg - assumed 'msg' D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 15 行.
+NOTIC: [8] Undefined index: msg D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `ro_chat` [ RunTime:0.0730s ]
+SQL: SELECT `ask`,`answer` FROM `ro_chat` WHERE `keys` LIKE '%%'  [ RunTime:0.3670s ]
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 39 行.
+NOTIC: [2] array_rand() expects parameter 1 to be array, null given D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `ro_conversation` [ RunTime:0.0705s ]
+SQL: INSERT INTO `ro_conversation` (`uid`,`time`) VALUES ('rainbow','2018-06-18 12:06:59') [ RunTime:0.0730s ]
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021002s ]
+
+[ 2018-06-18T12:01:48+08:00 ] ::1 /wwwroot/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\wwwroot\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: key D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 10 行.
+NOTIC: [8] Undefined index: msg D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant msg - assumed 'msg' D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 15 行.
+NOTIC: [8] Undefined index: msg D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `ro_chat` [ RunTime:0.0770s ]
+SQL: SELECT `ask`,`answer` FROM `ro_chat` WHERE `keys` LIKE '%%'  [ RunTime:1.4701s ]
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 39 行.
+NOTIC: [2] array_rand() expects parameter 1 to be array, null given D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `ro_conversation` [ RunTime:0.0670s ]
+SQL: INSERT INTO `ro_conversation` (`uid`,`time`) VALUES ('rainbow','2018-06-18 12:06:48') [ RunTime:0.0670s ]
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

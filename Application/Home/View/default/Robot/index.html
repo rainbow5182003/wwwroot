@@ -1,0 +1,66 @@
+<extend name="Base/common" />
+<block name="header"></block>
+<block name="body">
+	<section>
+		<div class="span12">
+			<ul class="thumbnails">
+				<foreach name="list" item="vo" >
+					<li class="span3">
+						<div class="thumbnail">							
+							<empty name="vo['avatar']">
+								<img src="__ROOT__/Uploads/avatar/default.jpg" class="img-circle" style="width: 200px; height: 200px;">
+							<else /> 
+								<img src="__ROOT__/Uploads/{$vo.avatar}"  class="img-circle" style="width: 200px; height: 200px;">
+							</empty>							
+							<div class="caption" align="center">
+								<h3>{$vo.name}</h3>								
+								<p align="center">
+									<a href="{:U('Robot/setting',array('rid'=>$vo['id']))}" class="btn btn-primary">设置</a>
+								</p>
+							</div>
+						</div>
+					</li>
+				</foreach>
+			</ul>
+		</div>
+	</section>
+</block>
+<block name="side"> </block>
+<block name="script">
+	<script type="text/javascript">
+		$(document)
+			.ajaxStart(function() {
+				$("button:submit").addClass("log-in").attr("disabled", true);
+			})
+			.ajaxStop(function() {
+				$("button:submit").removeClass("log-in").attr("disabled", false);
+			});
+
+		$("form").submit(function() {
+			var self = $(this);
+			$.post(self.attr("action"), self.serialize(), success, "json");
+			return false;
+
+			function success(data) {
+				if(data.status) {
+					window.location.href = data.url;
+				} else {
+					self.find(".Validform_checktip").text(data.info);
+					//刷新验证码
+					$(".reloadverify").click();
+				}
+			}
+		});
+
+		$(function() {
+			var verifyimg = $(".verifyimg").attr("src");
+			$(".reloadverify").click(function() {
+				if(verifyimg.indexOf('?') > 0) {
+					$(".verifyimg").attr("src", verifyimg + '&random=' + Math.random());
+				} else {
+					$(".verifyimg").attr("src", verifyimg.replace(/\?.*$/, '') + '?' + Math.random());
+				}
+			});
+		});
+	</script>
+</block>

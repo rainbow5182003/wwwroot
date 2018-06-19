@@ -1,0 +1,54 @@
+<extend name="Base/common" />
+<block name="header">
+
+</block>
+
+<block name="body">
+
+<section>
+	<div class="span12">
+        <form class="login-form" action="__SELF__" method="post">
+          <div class="control-group">
+            <label class="control-label" for="name">修改对话</label>
+            <div class="controls">
+              <input type="hidden" class="input" name="rid" value="{$_REQUEST['rid']}">
+          	  <input type="text" id="ask"  class="span3" placeholder="修改对话"  errormsg="修改对话" nullmsg="修改对话" name="ask" value="{$data.cust_said}">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="answer">语料类别</label>
+            <div class="controls">
+            	<select name="cate">
+            		<volist name="cate_list" id="vo">
+            			<option value="{$vo.id}">{$vo.cate}</option>            			
+            		</volist>
+				  				  
+				</select>
+           </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="answer">修改意图</label>
+            <div class="controls">
+            	<input type="text" id="keyword"  class="span3" placeholder="请填写修改意图"  errormsg="请填写修改意图" nullmsg="请填写修改意图" name="keyword" value="{$data.keyword}">
+           </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="answer">{$Think.session.robot}</label>           
+              <div class="controls">
+                 <textarea rows="5" cols="100" id="answer" name="answer" style="width:500px; height:100px; resize:none;">{$data.robot_said}</textarea>
+              </div>
+          </div>          
+          <div class="control-group">
+            <div class="controls">
+              <button type="submit" class="btn">保存</button>
+            </div>
+          </div>
+        </form>
+	</div>
+</section>
+</block>
+
+<block name="side"></block>
+<block name="script">
+	
+</block>

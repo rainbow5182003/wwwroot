@@ -1,0 +1,94 @@
+[ 2018-06-12T00:43:25+08:00 ] ::1 /wwwroot/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\wwwroot\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: key D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 10 行.
+NOTIC: [8] Undefined index: msg D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant msg - assumed 'msg' D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 15 行.
+NOTIC: [8] Undefined index: msg D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `ro_chat` [ RunTime:0.0760s ]
+SQL: SELECT `ask`,`answer` FROM `ro_chat` WHERE `keys` LIKE '%%'  [ RunTime:0.3850s ]
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 39 行.
+NOTIC: [2] array_rand() expects parameter 1 to be array, null given D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `ro_conversation` [ RunTime:0.0810s ]
+SQL: INSERT INTO `ro_conversation` (`uid`,`time`) VALUES ('rainbow','2018-06-12 12:06:25') [ RunTime:0.0820s ]
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.017001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017001s ]
+
+[ 2018-06-12T00:43:53+08:00 ] ::1 /wwwroot/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\wwwroot\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: key D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 10 行.
+NOTIC: [8] Undefined index: msg D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant msg - assumed 'msg' D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 15 行.
+NOTIC: [8] Undefined index: msg D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 39 行.
+NOTIC: [2] array_rand() expects parameter 1 to be array, null given D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `ro_conversation` [ RunTime:0.0730s ]
+SQL: INSERT INTO `ro_conversation` (`uid`,`time`) VALUES ('rainbow','2018-06-12 12:06:53') [ RunTime:0.0750s ]
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-06-12T01:17:55+08:00 ] ::1 /wwwroot/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\wwwroot\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: key D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 10 行.
+NOTIC: [8] Undefined index: msg D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant msg - assumed 'msg' D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 15 行.
+NOTIC: [8] Undefined index: msg D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 39 行.
+NOTIC: [2] array_rand() expects parameter 1 to be array, null given D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `ro_conversation` [ RunTime:0.0920s ]
+SQL: INSERT INTO `ro_conversation` (`uid`,`time`) VALUES ('rainbow','2018-06-12 01:06:55') [ RunTime:0.0820s ]
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-06-12T01:39:16+08:00 ] ::1 /wwwroot/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\wwwroot\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: key D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 10 行.
+NOTIC: [8] Undefined index: msg D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant msg - assumed 'msg' D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 15 行.
+NOTIC: [8] Undefined index: msg D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 39 行.
+NOTIC: [2] array_rand() expects parameter 1 to be array, null given D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `ro_conversation` [ RunTime:0.0780s ]
+SQL: INSERT INTO `ro_conversation` (`uid`,`time`) VALUES ('rainbow','2018-06-12 01:06:16') [ RunTime:0.0930s ]
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Api\Controller\IndexController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

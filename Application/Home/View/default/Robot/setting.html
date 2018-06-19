@@ -1,0 +1,73 @@
+<extend name="Base/common" />
+<block name="header"></block>
+<block name="body">
+	<section>
+		<script src="__STATIC__/uploadify/jquery.uploadify.min.js"></script>
+	    <link rel="stylesheet" type="text/css" href="__STATIC__/uploadify/uploadify.css">
+		<div class="span12">
+			<div class="thumbnail">
+				<empty name="robot['avatar']">
+					<form action="{:U('Robot/upload')}" enctype="multipart/form-data" method="post" >
+						<input type="file" name="avatar" id="ups"/>
+    				</form>
+					<img src="__ROOT__/Uploads/avatar/default.jpg" class="img-circle" style="width: 200px; height: 200px;">
+					<else />					
+					<img src="__ROOT__/Uploads/{$robot.avatar}" id ="imgs" class="img-circle" style="width: 200px; height: 200px;">
+				</empty>				
+			</div>
+			<table class="table">
+				<thead>
+					<tr>
+						<th style="width:30%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">{$Think.session.robot}</th>
+						<th>星座</th>
+						<th>年龄</th>
+						<th>APIKEY</th>
+						<th>创建时间</th>
+						<th>到期时间</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>{$robot.name}</td>
+						<td>{$robot.constellation}</td>
+						<td>{$robot.age}</td>
+						<td>{$robot.keys}</td>
+						<td>{$robot.addtime}</td>
+						<td>{$robot.endtime}</td>
+					</tr>
+
+				</tbody>
+			</table>
+			<ul class="thumbnails">
+				<volist name="cate" id="vo">		           
+		       		<li class="span3">
+						<div class="thumbnail">							
+							<i class="icon-th-large" style="font-size: 50px;"></i>					
+							<div class="caption" align="center">
+								<h3>{$vo.cate}</h3>								
+								<p align="center">
+									<a href="{:U('Chat/index',array('cid'=>$vo['id'],'rid'=>$_REQUEST['rid']))}" class="btn">设置</a>
+								</p>
+							</div>
+						</div>
+					</li>				
+				</volist> 				
+			</ul>
+		</div>
+	</section>
+
+</block>
+
+<block name="side"> </block>
+<block name="script">
+	<script type="text/javascript">	
+    	$('#ups').uploadify({
+        'swf'        : '__STATIC__/uploadify/uploadify.swf',
+        'uploader'   : '{:U("Robot/upload")}',
+        'buttonText' : '上传头相',
+        onUploadSuccess : function(file, data, response) {
+        	window.location.reload();
+        }
+    });
+	</script>
+</block>

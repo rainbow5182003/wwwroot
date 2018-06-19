@@ -1,0 +1,56 @@
+<extend name="Base/common" />
+<block name="header"></block>
+<block name="body">
+	<section>
+		<div class="span12">
+			<caption>语料类别：{$_REQUEST['cid']|chat_cate}</caption>
+			<div style="margin:auto; text-align: right;margin-bottom: 20px;">
+				<a href="{:U('Chat/add',array('cid'=>$_REQUEST['cid'],'rid'=>$_REQUEST['rid']))}" class="btn">添加语料</a>
+			</div>
+			<table class="table" style="table-layout: fixed;font-size: 10px; color: #000088;">				
+				<thead>
+					<tr>
+						<th width="10%">#</th>
+						<th width="30%">客户</th>
+						<th width="10%">意图</th>
+						<th width="30%"">{$Think.session.robot}</th>
+						<th width="20%">时间</th>
+						<th width="10%">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<volist name="list" id="vo">
+						<tr>
+							<th scope="row">{$i}</th>
+							<td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">{$vo.ask}</td>
+							<td>{$vo.keyword}</td>
+							<td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">{$vo.answer}</td>
+							<td>{$vo.time}</td>
+							<td>
+								<a href="{:U('Chat/edit',array('id'=>$vo['id'],'cid'=>$_REQUEST['cid'],'rid'=>$_REQUEST['rid']))}">编辑</a>|<a href="{:U('Chat/del',array('id'=>$vo['id'],'cid'=>$_REQUEST['cid'],'rid'=>$_REQUEST['rid']))}"   id="del">删除</a></td>
+						</tr>
+					</volist>
+				</tbody>
+			</table>
+			<div style="margin:auto; text-align: center;" class="pagination">
+				<ul>
+			    {$page}
+			  </ul>
+			</div>			
+		</div>
+	</section>
+
+</block>
+
+<block name="side"> </block>
+<block name="script">
+	<script type="text/javascript">
+		
+		$(function() {
+			var url = $("#del").attr("data-url");
+			$("#del").click(function() {
+				alert(url);
+			});
+		});
+	</script>
+</block>

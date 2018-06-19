@@ -1,0 +1,60 @@
+<extend name="Base/common" />
+<block name="header"></block>
+<block name="body">
+	<section>
+		<script src="__STATIC__/uploadify/jquery.uploadify.min.js"></script>
+	    <link rel="stylesheet" type="text/css" href="__STATIC__/uploadify/uploadify.css">
+		<div class="span12">
+			<form action="{:U('Image/upload')}" enctype="multipart/form-data" method="post" style="float: right;">
+						<input type="file" name="avatar" id="ups"/>
+    	    </form>			   
+			<volist name="list" id="vo">
+											
+			</volist>
+			
+			<table class="table" style="table-layout: fixed;font-size: 10px; color: #000088;">				
+				<thead>
+					<tr>
+						<th width="10%">#</th>						
+						<th width="10%">图片</th>
+						<th width="30%"">URL</th>
+						<th width="20%">时间</th>
+						<th width="10%">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<volist name="list" id="vo">
+						<tr>
+							<th scope="row">{$i}</th>							
+							<td><P align="center"><img src="{$vo.url}" class="img-circle" width="80" height="80"></P><P align="center">{$vo.name}</P>	</td>
+							<td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">{$vo.url}</td>
+							<td>{$vo.create_time}</td>
+							<td><a href="{:U('Image/del',array('id'=>$vo['id']))}"   id="del">删除</a></td>
+						</tr>
+					</volist>
+				</tbody>
+			</table>
+			<div style="margin:auto; text-align: center;" class="pagination">
+				<ul>
+			    {$page}
+			  </ul>
+			</div>
+		</div>
+	</section>
+
+</block>
+
+<block name="side"> </block>
+<block name="script">
+	<script type="text/javascript">	
+    	$('#ups').uploadify({
+        'swf'        : '__STATIC__/uploadify/uploadify.swf',
+        'uploader'   : '{:U("Image/upload")}',
+        'buttonText' : '上传',
+        onUploadSuccess : function(file, data, response) {
+        	//alert(data);
+        	window.location.reload();
+        }
+    });
+	</script>
+</block>

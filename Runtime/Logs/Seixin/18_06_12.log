@@ -1,0 +1,166 @@
+[ 2018-06-12T02:33:04+08:00 ] ::1 /wwwroot/seixin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\wwwroot\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: msgtype D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 7 行.
+NOTIC: [8] Undefined index: robotid D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Undefined index: robotnickname D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 24 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 69 行.
+NOTIC: [8] Undefined index: mid D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Undefined index: nickname D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 26 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 69 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 27 行.
+NOTIC: [8] Undefined index: content D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 28 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 69 行.
+NOTIC: [8] Undefined index: msgid D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 29 行.
+NOTIC: [8] Undefined index: msgtype D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `ro_wx` [ RunTime:0.0780s ]
+SQL: SELECT `keys` FROM `ro_wx` WHERE `weixin_id` IN ('wxid_ctrehftn2bny22') LIMIT 1   [ RunTime:0.0780s ]
+SQL: SHOW COLUMNS FROM `ro_chat` [ RunTime:0.0810s ]
+SQL: SELECT `ask`,`answer` FROM `ro_chat` WHERE `keys` LIKE '%6b909ce7159fb317b970ee844496e850%'  [ RunTime:0.4020s ]
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 49 行.
+NOTIC: [2] array_rand() expects parameter 1 to be array, null given D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 49 行.
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `ro_seixin` [ RunTime:0.0780s ]
+SQL: INSERT INTO `ro_seixin` (`robotnickname`,`nickname`,`cust_said`,`time`,`keys`) VALUES ('','','','2018-06-12 02:33:03','6b909ce7159fb317b970ee844496e850') [ RunTime:0.0830s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-06-12T02:33:19+08:00 ] ::1 /wwwroot/seixin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\wwwroot\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: msgtype D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 7 行.
+NOTIC: [8] Undefined index: robotid D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 24 行.
+NOTIC: [8] Undefined index: robotnickname D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 70 行.
+NOTIC: [8] Undefined index: mid D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 26 行.
+NOTIC: [8] Undefined index: nickname D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 27 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 70 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 28 行.
+NOTIC: [8] Undefined index: content D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 29 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 70 行.
+NOTIC: [8] Undefined index: msgid D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 30 行.
+NOTIC: [8] Undefined index: msgtype D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `ro_wx` [ RunTime:0.0820s ]
+SQL: SELECT `keys` FROM `ro_wx` WHERE `weixin_id` IN ('wxid_ctrehftn2bny22') LIMIT 1   [ RunTime:0.0740s ]
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 50 行.
+NOTIC: [2] array_rand() expects parameter 1 to be array, null given D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 50 行.
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `ro_seixin` [ RunTime:0.0740s ]
+SQL: INSERT INTO `ro_seixin` (`robotnickname`,`nickname`,`cust_said`,`time`,`keys`) VALUES ('','','','2018-06-12 02:33:18','6b909ce7159fb317b970ee844496e850') [ RunTime:0.0770s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-06-12T02:33:36+08:00 ] ::1 /wwwroot/seixin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\wwwroot\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ro_emotion` [ RunTime:0.0760s ]
+SQL: SELECT `url` FROM `ro_emotion` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0750s ]
+NOTIC: [8] Undefined index: msgtype D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 10 行.
+NOTIC: [8] Undefined index: robotid D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 27 行.
+NOTIC: [8] Undefined index: robotnickname D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 28 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 73 行.
+NOTIC: [8] Undefined index: mid D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 29 行.
+NOTIC: [8] Undefined index: nickname D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 30 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 73 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 31 行.
+NOTIC: [8] Undefined index: content D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 32 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 73 行.
+NOTIC: [8] Undefined index: msgid D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 33 行.
+NOTIC: [8] Undefined index: msgtype D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `ro_wx` [ RunTime:0.0800s ]
+SQL: SELECT `keys` FROM `ro_wx` WHERE `weixin_id` IN ('wxid_ctrehftn2bny22') LIMIT 1   [ RunTime:0.0810s ]
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 53 行.
+NOTIC: [2] array_rand() expects parameter 1 to be array, null given D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 53 行.
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 54 行.
+SQL: SHOW COLUMNS FROM `ro_seixin` [ RunTime:0.0770s ]
+SQL: INSERT INTO `ro_seixin` (`robotnickname`,`nickname`,`cust_said`,`time`,`keys`) VALUES ('','','','2018-06-12 02:33:36','6b909ce7159fb317b970ee844496e850') [ RunTime:0.0770s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-06-12T02:34:01+08:00 ] ::1 /wwwroot/seixin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\wwwroot\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ro_emotion` [ RunTime:0.0920s ]
+SQL: SELECT `url` FROM `ro_emotion` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0750s ]
+NOTIC: [8] Undefined index: msgtype D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 10 行.
+NOTIC: [8] Undefined index: robotid D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 27 行.
+NOTIC: [8] Undefined index: robotnickname D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 28 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 73 行.
+NOTIC: [8] Undefined index: mid D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 29 行.
+NOTIC: [8] Undefined index: nickname D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 30 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 73 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 31 行.
+NOTIC: [8] Undefined index: content D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 32 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 73 行.
+NOTIC: [8] Undefined index: msgid D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 33 行.
+NOTIC: [8] Undefined index: msgtype D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `ro_wx` [ RunTime:0.0760s ]
+SQL: SELECT `keys` FROM `ro_wx` WHERE `weixin_id` IN ('wxid_ctrehftn2bny22') LIMIT 1   [ RunTime:0.0760s ]
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 53 行.
+NOTIC: [2] array_rand() expects parameter 1 to be array, null given D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 53 行.
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 54 行.
+SQL: SHOW COLUMNS FROM `ro_seixin` [ RunTime:0.0760s ]
+SQL: INSERT INTO `ro_seixin` (`robotnickname`,`nickname`,`cust_said`,`time`,`keys`) VALUES ('','','','2018-06-12 02:34:01','6b909ce7159fb317b970ee844496e850') [ RunTime:0.0800s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-06-12T02:34:55+08:00 ] ::1 /wwwroot/seixin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\wwwroot\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: msgtype D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 6 行.
+NOTIC: [8] Undefined index: robotid D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Undefined index: robotnickname D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 24 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 69 行.
+NOTIC: [8] Undefined index: mid D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Undefined index: nickname D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 26 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 69 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 27 行.
+NOTIC: [8] Undefined index: content D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 28 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 69 行.
+NOTIC: [8] Undefined index: msgid D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 29 行.
+NOTIC: [8] Undefined index: msgtype D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `ro_wx` [ RunTime:0.0740s ]
+SQL: SELECT `keys` FROM `ro_wx` WHERE `weixin_id` IN ('wxid_ctrehftn2bny22') LIMIT 1   [ RunTime:0.0750s ]
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 49 行.
+NOTIC: [2] array_rand() expects parameter 1 to be array, null given D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 49 行.
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wwwroot\Application\Seixin\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `ro_seixin` [ RunTime:0.0750s ]
+SQL: INSERT INTO `ro_seixin` (`robotnickname`,`nickname`,`cust_said`,`time`,`keys`) VALUES ('','','','2018-06-12 02:34:55','6b909ce7159fb317b970ee844496e850') [ RunTime:0.0760s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

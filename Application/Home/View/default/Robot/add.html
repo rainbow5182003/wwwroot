@@ -1,0 +1,72 @@
+<extend name="Base/common" />
+<block name="header">
+
+</block>
+
+<block name="body">
+
+<section>
+	<div class="span12">
+        <form class="login-form" action="__SELF__" method="post">
+          <div class="control-group">
+            <label class="control-label" for="name">机器人名</label>
+            <div class="controls">
+              <input type="text" id="name"  class="span3" placeholder="机器人名"  errormsg="中文或英文" nullmsg="机器人名" name="name">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="sex">性别</label>
+            <div class="controls">
+              <input type="text" id="sex"  class="span3" placeholder="请输入性别"  errormsg="男或女" nullmsg="请填写性别" name="sex">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="constellation">星座</label>
+            <div class="controls">
+              <input type="text" id="constellation"  class="span3" placeholder="请输入星座"  errormsg="星座" nullmsg="请填写星座" name="constellation">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="age">年龄</label>
+            <div class="controls">
+              <input type="text" id="age" class="span3" placeholder="请输入年龄" errormsg="年龄" nullmsg="请填年龄"  name="age">
+            </div>
+            <div class="controls Validform_checktip text-warning"></div>
+          </div>
+          <div class="control-group">
+            <div class="controls">
+              <button type="submit" class="btn">提 交</button>
+            </div>
+          </div>
+        </form>
+	</div>
+</section>
+</block>
+
+<block name="side"></block>
+<block name="script">
+	<script type="text/javascript">
+
+    	$(document)
+	    	.ajaxStart(function(){
+	    		$("button:submit").addClass("log-in").attr("disabled", true);
+	    	})
+	    	.ajaxStop(function(){
+	    		$("button:submit").removeClass("log-in").attr("disabled", false);
+	    	});
+
+    	$("form").submit(function(){
+    		var self = $(this);
+    		$.post(self.attr("action"), self.serialize(), success, "json");
+    		return false;
+
+    		function success(data){
+    			if(data.status){
+    				window.location.href = data.url;
+    			} else {
+    				self.find(".Validform_checktip").text(data.info);
+    			}
+    		}
+    	});
+	</script>
+</block>
